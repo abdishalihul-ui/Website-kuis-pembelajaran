@@ -1,0 +1,152 @@
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    color: #1e293b;
+}
+
+/* Container utama */
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #4f46e5;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+/* Card */
+.card {
+    background: white;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* Tombol */
+button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #3730a3;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Pilihan jawaban */
+.answer-btn {
+    display: block;
+    width: 100%;
+    background: #f1f5f9;
+    color: #1e293b;
+    text-align: left;
+    border: 2px solid #e2e8f0;
+    margin-top: 12px;
+}
+
+.answer-btn:hover:not(:disabled) {
+    background: #e0e7ff;
+    border-color: #4f46e5;
+}
+
+.answer-btn.correct {
+    background: #dcfce7;
+    border-color: #16a34a;
+}
+
+.answer-btn.wrong {
+    background: #fee2e2;
+    border-color: #dc2626;
+}
+
+/* Informasi kuis */
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#questionText {
+    margin: 25px 0;
+    text-align: left;
+}
+
+/* Progress bar */
+.progress {
+    width: 100%;
+    height: 10px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progressBar {
+    width: 0%;
+    height: 100%;
+    background: #4f46e5;
+    transition: width 0.3s;
+}
+
+/* Utility */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px auto;
+        padding: 12px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}

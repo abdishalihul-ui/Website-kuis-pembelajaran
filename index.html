@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuizSmart - Kuis Pembelajaran</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>QuizSmart</h1>
+            <p>Kuis Pembelajaran Interaktif</p>
+        </header>
+
+        <!-- Halaman Awal -->
+        <section id="startScreen" class="card">
+            <h2>Selamat Datang! 👋</h2>
+
+            <p>
+                Uji pengetahuanmu melalui kuis
+                pembelajaran yang menyenangkan.
+            </p>
+
+            <button id="startButton">
+                Mulai Kuis
+            </button>
+        </section>
+
+        <!-- Halaman Pertanyaan -->
+        <section id="quizScreen" class="card hidden">
+
+            <div class="quiz-info">
+                <span id="questionNumber"></span>
+                <span id="scoreDisplay"></span>
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <h2 id="questionText"></h2>
+
+            <div id="answerButtons"></div>
+
+            <button id="nextButton" class="hidden">
+                Pertanyaan Berikutnya
+            </button>
+
+        </section>
+
+        <!-- Halaman Hasil -->
+        <section id="resultScreen" class="card hidden">
+
+            <h2>Kuis Selesai! 🎉</h2>
+
+            <p>Skor Akhir Kamu:</p>
+
+            <h1 id="finalScore"></h1>
+
+            <p id="resultMessage"></p>
+
+            <button id="restartButton">
+                Ulangi Kuis
+            </button>
+
+        </section>
+
+        <footer>
+            <p>© 2026 QuizSmart | Media Pembelajaran Digital</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
